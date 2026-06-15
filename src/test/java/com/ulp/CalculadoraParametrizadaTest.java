@@ -5,6 +5,10 @@
  */
 package com.ulp;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
+
 /**
  *
  * @author edgar
@@ -18,6 +22,6 @@ public class CalculadoraParametrizadaTest {
     })
     public void testSumaParametrizada(double num1, double num2, double resultadoEsperado) {
         Calculadora calc = new Calculadora();
-        assertEquals(resultadoEsperado, calc.sumar(num1, num2), 0.001);
+        assertEquals(resultadoEsperado, calc.sum(num1, num2), 0.001);
     }
 }
