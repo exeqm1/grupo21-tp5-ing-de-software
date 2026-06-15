@@ -50,6 +50,14 @@
             <scope>test</scope>
         </dependency>
         
+        <!-- NUEVA: dependencia para usar @Suite y @SelectClasses -->
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-suite</artifactId>
+            <version>1.10.2</version>
+            <scope>test</scope>
+        </dependency>
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
